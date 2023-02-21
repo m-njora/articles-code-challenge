@@ -1,11 +1,11 @@
 #This is our main executable and will be how we initialize and start our app.
 require 'pry'
 
-# require_relative '../config/environment'
+require_relative '../config/environment'
 
-# truelove = Magazine.new("lifestyle", "fitness")
+truelove = Magazine.new("lifestyle", "fitness")
 
-# vogue = Magazine.new("vogue", "health")
+vogue = Magazine.new("vogue", "health")
 
 # fred = Author.new("fred")
 # joy = Author.new("joy")

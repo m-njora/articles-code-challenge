@@ -45,7 +45,7 @@ class Magazine
 #         auth.magazine.name == self.name
 #             auth.author
 #     end.uniq
-end
+#end
 
 
 # # returns an array string of the titles of all articles written for that magazine
@@ -67,7 +67,7 @@ end
 #     end
 # end
 
-end
+#end
 
 #mag1 = Magazine.new("True love", "fitness")
 #binding.pry
