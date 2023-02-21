@@ -29,11 +29,13 @@ class Magazine
         end.uniq
 
     end
-#     def self.find_by_name(name)
-#         self.all.find do |article|
-#             article.name.include?(name)
-#         end
-#     end
+    #returns the first magazine object that matches
+
+    def self.find_by_name(name)
+        self.all.find do |article|
+            article.name.include?(name)
+        end
+    end
 #     # returns an array string of the titles of all articles written for that magazine
 #     def article_titles
 #         Article.all.map do |art|
