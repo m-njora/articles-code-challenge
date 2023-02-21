@@ -31,12 +31,14 @@ class Author
 
         
     end
-    #def add_article(magazine, title)
-    #     Article.new(self, magazine, title)
+
+    #creates a new Article instance and associates it with that author and that magazine.
+    def add_article(magazine, title)
+        Article.new(self, magazine, title)
 
 
-    # end
-    # #a unique array of strings of topic areas the author has contributed to
+    end
+    #a unique array of strings of topic areas the author has contributed to
     # def topic_areas
     #     self.magazines.map do |mag|
     #         mag.magazine.category
