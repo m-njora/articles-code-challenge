@@ -52,13 +52,6 @@ def contributors
 end
 
 
-# returns an array string of the titles of all articles written for that magazine
-def article_titles
-    Article.all.map do |art|
-        art.magazine == self.name
-            art.title
-    end
-end
 # Returns an array of authors who have written more than 2 articles for the magazine
 def contributing_author
     cont_auth = Article.all.map do |auth|
