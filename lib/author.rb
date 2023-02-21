@@ -16,12 +16,12 @@ class Author
     def self.all
         @@all
     end
-#returns article instances for authors
-    # def articles
-    #     Article.all.select do |article|
-    #         article.author == self
-    #     end
-    # end
+#Returns an array of Article instances the author has written
+    def articles
+        Article.all.select do |article|
+            article.author == self
+        end
+    end
 #
     # def magazines
     #     self.articles.filter do |article|
