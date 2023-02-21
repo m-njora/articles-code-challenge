@@ -36,13 +36,13 @@ class Magazine
             article.name.include?(name)
         end
     end
-#     # returns an array string of the titles of all articles written for that magazine
-#     def article_titles
-#         Article.all.map do |art|
-#             art.magazine == self.name
-#                 art.title
-#         end
-#     end
+    # returns an array string of the titles of all articles written for that magazine
+    def article_titles
+        Article.all.map do |art|
+            art.magazine == self.name
+                art.title
+        end
+    end
 # # Returns an array of Author instances who have written for this magazine
 # def contributors
 #     Article.all.map do |auth|
