@@ -39,11 +39,11 @@ class Author
 
     end
     #a unique array of strings of topic areas the author has contributed to
-    # def topic_areas
-    #     self.magazines.map do |mag|
-    #         mag.magazine.category
-    #     end.uniq
-    # end
+    def topic_areas
+        self.magazines.map do |mag|
+            mag.magazine.category
+        end.uniq
+    end
 end
 #author = Author.new
 #author.name ="Lily"
