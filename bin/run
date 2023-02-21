@@ -10,9 +10,9 @@ vogue = Magazine.new("vogue", "health")
 fred = Author.new("fred")
 joy = Author.new("joy")
 
-# art1 = Article.new(fred,vogue,"how to loose weight")
-# art2 = Article.new(fred,truelove,"how to loose a man")
-# art3 = Article.new(joy,vogue,"rihannas belly")
+art1 = Article.new(fred,vogue,"how to loose weight")
+art2 = Article.new(fred,truelove,"how to loose a man")
+art3 = Article.new(joy,vogue,"rihannas belly")
 
 # joy.add_article(truelove,"how i met your mother")
 
