@@ -43,13 +43,13 @@ class Magazine
                 art.title
         end
     end
-# # Returns an array of Author instances who have written for this magazine
-# def contributors
-#     Article.all.map do |auth|
-#         auth.magazine.name == self.name
-#             auth.author
-#     end.uniq
-#end
+# Returns an array of Author instances who have written for this magazine
+def contributors
+    Article.all.map do |auth|
+        auth.magazine.name == self.name
+            auth.author
+    end.uniq
+end
 
 
 # # returns an array string of the titles of all articles written for that magazine
