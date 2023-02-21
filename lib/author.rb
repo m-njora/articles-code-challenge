@@ -22,15 +22,16 @@ class Author
             article.author == self
         end
     end
-#
-    # def magazines
-    #     self.articles.filter do |article|
-    #         article.magazine 
-    #     end.uniq
+#Returns a unique array of Magazine instances for which the author has contributed to
+
+    def magazines
+        self.articles.filter do |article|
+            article.magazine 
+        end.uniq
 
         
-    # end
-    # def add_article(magazine, title)
+    end
+    #def add_article(magazine, title)
     #     Article.new(self, magazine, title)
 
 
