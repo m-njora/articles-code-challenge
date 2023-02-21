@@ -19,14 +19,16 @@ class Magazine
         @@all
 
     end
-#     def contributors
-#         Article.all.map do |article|
-#              article.magazine.name == self.name
-#                 article.author
-            
-#         end.uniq
+    #Returns an array of Author instances who have written for this magazine
 
-#     end
+    def contributors
+        Article.all.map do |article|
+             article.magazine.name == self.name
+                article.author
+            
+        end.uniq
+
+    end
 #     def self.find_by_name(name)
 #         self.all.find do |article|
 #             article.name.include?(name)
