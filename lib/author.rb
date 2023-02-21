@@ -3,13 +3,46 @@ class Author
 
     attr_reader :name
 
+    @@all = []
+
     #An author is initialized with a name, as a string.
 
-    def initialize(name = "Bob Ross")
+    def initialize(name)
         @name = name
+        @@all << self
     end
+
+
+    def self.all
+        @@all
+    end
+#returns article instances for authors
+    # def articles
+    #     Article.all.select do |article|
+    #         article.author == self
+    #     end
+    # end
+#
+    # def magazines
+    #     self.articles.filter do |article|
+    #         article.magazine 
+    #     end.uniq
+
+        
+    # end
+    # def add_article(magazine, title)
+    #     Article.new(self, magazine, title)
+
+
+    # end
+    # #a unique array of strings of topic areas the author has contributed to
+    # def topic_areas
+    #     self.magazines.map do |mag|
+    #         mag.magazine.category
+    #     end.uniq
+    # end
 end
-author = Author.new
+#author = Author.new
 #author.name ="Lily"
 
 #p author.name
