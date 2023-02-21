@@ -7,8 +7,8 @@ truelove = Magazine.new("lifestyle", "fitness")
 
 vogue = Magazine.new("vogue", "health")
 
-# fred = Author.new("fred")
-# joy = Author.new("joy")
+fred = Author.new("fred")
+joy = Author.new("joy")
 
 # art1 = Article.new(fred,vogue,"how to loose weight")
 # art2 = Article.new(fred,truelove,"how to loose a man")
